@@ -1,0 +1,168 @@
+/* COLOR SCHEME
+Mint green: #c6e7de
+Tiffany: blue #9cd4c6
+Viridian: #38806e
+Dark green: #132b25
+Imperial red: #e93b3b
+*/ 
+
+html {
+  background-color: #132b25;
+}
+
+body {
+  background: #ffffff;
+  color: #132b25;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  box-shadow: 0 0 15px 2px #9cd4c6;
+}
+
+p {
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none; 
+  color: #e93b3b;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 60px;
+}
+
+#header {
+  background-image: url("https://i.imgur.com/9wMb88m.jpg?2");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: #e93b3b;
+}
+
+h3 {
+  margin: 0 0 60px 0;
+}
+
+figure {
+  margin: 40px 0px;
+}
+
+.img {
+  display: block;
+  width: 500px;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 5px solid #f1f9f7;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 1px white;
+}
+
+.caption {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+#intro {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#image {
+  border-color: #132b25;
+  box-shadow: none;
+  width: 1000px;
+}
+
+#img-3 {
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  body {
+    width: auto;
+  }
+  main {
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+    h1 {
+    font-size: 3rem;
+  }
+  
+  .img {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    width: auto;
+  }
+  
+  main {
+    max-width: 80vw;  
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .img {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  
+  iframe {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  
+  body {
+    width: 100vw;
+  }
+  
+  #header {
+    background-image: url("https://i.imgur.com/9wMb88m.jpg?2");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+  }
+  
+  #title {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  #img-caption {
+    display: none;
+  }
+  
+  #image {
+    display: none;
+  }
+ 
+}
